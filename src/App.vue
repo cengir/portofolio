@@ -1,59 +1,60 @@
 <template>
-  <div id="app">
-    <!-- <Navbars /> -->
-    <HelloWorld />
-    <Project />
+    <Navbars />
+    <router-view />
     <Footer />
-  </div>
 </template>
 
-<script setup>
-import HelloWorld from "./components/HelloWorld.vue";
-import Footer from "./components/Footer.vue";
-import Project from "./components/Project.vue";
+<script>
+import Navbars from './components/Navbars.vue'
+import Footer from './components/Footer.vue'
 
-// This starter template is using Vue 3 experimental <script setup> SFCs
-// Check out https://github.com/vuejs/rfcs/blob/master/active-rfcs/0040-script-setup.md
+export default {
+    name: 'App',
+    components: {
+        Navbars,
+        Footer,
+    },
+}
 </script>
 
 <style>
 #app {
-  font-family: "Dosis", sans-serif;
+    font-family: 'Dosis', sans-serif;
 
-  /* font-family: "Fuggles", cursive; */
-  text-align: center;
-  color: #2c3e50;
+    /* font-family: "Fuggles", cursive; */
+    text-align: center;
+    color: #2c3e50;
 }
 
 .chat-notification {
-  display: flex;
-  max-width: 24rem;
-  margin: 0 auto;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  background-color: #fff;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    display: flex;
+    max-width: 24rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 .chat-notification-logo-wrapper {
-  flex-shrink: 0;
+    flex-shrink: 0;
 }
 .chat-notification-logo {
-  height: 3rem;
-  width: 3rem;
+    height: 3rem;
+    width: 3rem;
 }
 .chat-notification-content {
-  margin-left: 1.5rem;
-  padding-top: 0.25rem;
+    margin-left: 1.5rem;
+    padding-top: 0.25rem;
 }
 .chat-notification-title {
-  color: #1a202c;
-  font-size: 1.25rem;
-  line-height: 1.25;
+    color: #1a202c;
+    font-size: 1.25rem;
+    line-height: 1.25;
 }
 .chat-notification-message {
-  color: #718096;
-  font-size: 1rem;
-  line-height: 1.5;
+    color: #718096;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 </style>
