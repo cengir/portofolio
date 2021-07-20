@@ -8,6 +8,7 @@ script:
 deploy:
     provider: pages
     skip_cleanup: true
+    local_dir: /
     github_token: $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 # Set in the settings page of your repository, as a secure variable
     keep_history: true
     on:
