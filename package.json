@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "start": "static.json"
   },
   "dependencies": {
     "@headlessui/vue": "^1.3.0",
