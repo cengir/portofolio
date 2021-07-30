@@ -6,7 +6,7 @@ module.exportsdefineConfig = {
 //   publicPath: process.env.NODE_ENV === 'production'
 //     ? '/portofolio/'
 // //     : '/',
-  base: '/portofolio/',
+  baseUrl: '/portofolio/',
   plugins: [vue()],
 }
 
