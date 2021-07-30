@@ -3,9 +3,10 @@ import vue from "@vitejs/plugin-vue";
 
 // https://vitejs.dev/config/
 module.exportsdefineConfig = {
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/portofolio/'
-//     : '/',
+//   publicPath: process.env.NODE_ENV === 'production'
+//     ? '/portofolio/'
+// //     : '/',
+  base: '/portofolio/',
   plugins: [vue()],
 }
 
